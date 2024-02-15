@@ -1,0 +1,16 @@
+[package]
+name = "sqlite_hll"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+hyperloglog = "1.0.2"
+
+[build-dependencies]
+bindgen = "0.69.4"
+
